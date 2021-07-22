@@ -23,19 +23,19 @@ for i in ${Md5sums[@]}
 do
       #get the first file + its relative path and its respective md5sum from .md5 file
     ReadA=$(cat ${i} | awk 'NR==1 {print $2}')
-	CsumA=$(cat ${i} | awk 'NR==1 {print $1}')
+    CsumA=$(cat ${i} | awk 'NR==1 {print $1}')
 	
-	  #perform the actual check using the provided md5sum and calculating the md5sum for the file in the target directory
-	echo "Checking md5sums for:"
-	md5sum -c <<< "$CsumA  $Dir1${ReadA}"
+       #perform the actual check using the provided md5sum and calculating the md5sum for the file in the target directory
+    echo "Checking md5sums for:"
+    md5sum -c <<< "$CsumA  $Dir1${ReadA}"
 	
-	  #same procedure but for the second file within *.md5
-	ReadB=$(cat ${i} | awk 'NR==2 {print $2}')
-	CsumB=$(cat ${i} | awk 'NR==2 {print $1}')
+      #same procedure but for the second file within *.md5
+    ReadB=$(cat ${i} | awk 'NR==2 {print $2}')
+    CsumB=$(cat ${i} | awk 'NR==2 {print $1}')
 	
-	echo "Checking md5sums for:"
-	md5sum -c <<< "$CsumB  $Dir1${ReadB}"
+    echo "Checking md5sums for:"
+    md5sum -c <<< "$CsumB  $Dir1${ReadB}"
 	
-	printf "\n"
+    printf "\n"
 done
 
