@@ -7,10 +7,10 @@ This short script will help checking md5sums between SciLife deliveries that hav
 
 It can also be used on other original files, but they have to come with .md5 files for each sample and look like this:
 
-    ```bash
-    d3a8389612d9bdaef0bfbf8e13c13047  P21518_1001/02-FASTQ/210706_A00621_0443_BHCYLCDSX2/P21518_1001_S1_L001_R2_001.fastq.gz
-    5c3df76890e2024bfaa124a5446ad460  P21518_1001/02-FASTQ/210706_A00621_0443_BHCYLCDSX2/P21518_1001_S1_L001_R1_001.fastq.gz
-    ```
+```bash
+d3a8389612d9bdaef0bfbf8e13c13047  P21518_1001/02-FASTQ/210706_A00621_0443_BHCYLCDSX2/P21518_1001_S1_L001_R2_001.fastq.gz
+5c3df76890e2024bfaa124a5446ad460  P21518_1001/02-FASTQ/210706_A00621_0443_BHCYLCDSX2/P21518_1001_S1_L001_R1_001.fastq.gz
+```
 
 I may expand this repo later on to include a script which can check md5sums between files with different relative paths and names.
 
