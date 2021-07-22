@@ -16,4 +16,4 @@ I may expand this repo later on to include a script which can check md5sums betw
 
 ## Instructions
 
-First simply adjust the head to your liking (naming of job & log files) and enter your SNIC project ID if you wish to run it on rackham. Specify the directory into which the original files have been transfered to under `Dir1="..."`. Lastly give the path to a file containing a list of all .md5 files (one file per row) under `Md5sums="..."`. This file can easily be created using e.g. `find . -name "*[0-9].md5 > md5list.txt"`
+First simply adjust the head to your liking (naming of job & log files) and enter your SNIC project ID if you wish to run it on rackham. Specify the directory into which the original files have been transfered to under `Dir1="..."`. Lastly give the path to a file containing a list of all .md5 files (one file per row) under `Md5sums="..."`. This file can easily be created using e.g. `find . -name "*[0-9].md5" > md5list.txt`
